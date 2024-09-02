@@ -10,14 +10,14 @@ spring:
     show-sql: false
     properties:
       hibernate:
-        "[format_sql]": true
+        format_sql: true
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   mail:
     host: localhost
     port: 1025
-    username: leona
-    password: leona
+    username: ali
+    password: ali
     properties:
       mail:
         smtp:
@@ -28,7 +28,6 @@ spring:
         connectiontimeout: 5000
         timeout: 3000
         writetimeout: 5000
-
 application:
   security:
     jwt:
@@ -42,6 +41,5 @@ application:
   file:
     uploads:
       photos-output-path: ./uploads
-
 server:
   port: 8088
